@@ -23,6 +23,15 @@ Landing page for **New Kabul Jan Restaurant &amp; Zaaki Rooftop** — a rooftop 
 - **Direct call / WhatsApp** links (`tel:+923337997897`)
 - **Smooth-scroll navigation** with mobile-friendly tabs
 
+## Gallery
+
+Swappable images in the `images/` folder:
+
+| | | |
+| --- | --- | --- |
+| ![Open-Air Sky Terrace](images/rooftop-twilight.png) | ![Family Majlis Dastarkhwan](images/family-majlis.jpg) | ![Main Hall Lounge](images/samovar-lounge.jpg) |
+| ![Starry Night Dastarkhwan](images/starry-dastarkhwan.jpg) | ![Signature Dining Moments](images/1.jpeg) | ![Evening Atmosphere](images/2.jpeg) |
+
 ## Variants
 
 The repo ships 6 self-contained variants so the owner can compare layouts:
