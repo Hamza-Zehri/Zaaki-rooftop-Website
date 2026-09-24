@@ -1,0 +1,1579 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error": "#690005",
+          "on-background": "#e3e2e6",
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed": "#2a1700",
+          "error-container": "#93000a",
+          "surface-container-high": "#292a2d",
+          "inverse-surface": "#e3e2e6",
+          "surface-container": "#1f1f23",
+          "on-tertiary-fixed": "#410002",
+          "on-tertiary-container": "#8a0d12",
+          "surface-container-highest": "#343538",
+          "inverse-primary": "#855300",
+          "on-primary-container": "#613b00",
+          "tertiary-container": "#ff9389",
+          "error": "#ffb4ab",
+          "primary-container": "#f59e0b",
+          "surface-variant": "#343538",
+          "secondary-fixed": "#ffdbca",
+          "secondary": "#ffb68e",
+          "on-secondary-fixed": "#331200",
+          "outline-variant": "#534434",
+          "on-primary-fixed-variant": "#653e00",
+          "surface-bright": "#38393c",
+          "background": "#121316",
+          "surface-tint": "#ffb95f",
+          "on-surface": "#e3e2e6",
+          "on-secondary-container": "#ffe2d5",
+          "outline": "#a08e7a",
+          "primary": "#ffc174",
+          "inverse-on-surface": "#2f3034",
+          "primary-fixed-dim": "#ffb95f",
+          "primary-fixed": "#ffddb8",
+          "surface": "#121316",
+          "surface-container-lowest": "#0d0e11",
+          "on-secondary": "#532200",
+          "tertiary": "#ffbcb5",
+          "secondary-container": "#ab4c00",
+          "tertiary-fixed-dim": "#ffb4ac",
+          "on-tertiary": "#690007",
+          "on-tertiary-fixed-variant": "#8e1214",
+          "surface-container-low": "#1b1b1f",
+          "secondary-fixed-dim": "#ffb68e",
+          "surface-dim": "#121316",
+          "on-secondary-fixed-variant": "#763300",
+          "tertiary-fixed": "#ffdad6",
+          "on-primary": "#472a00",
+          "on-surface-variant": "#d8c3ad"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter-mobile": "1rem",
+          "margin-tablet": "2rem",
+          "gutter-tablet": "1.5rem",
+          "margin-desktop": "3.5rem",
+          "section-gap-sm": "2.5rem",
+          "section-gap-lg": "6rem",
+          "section-gap-md": "4rem",
+          "margin-mobile": "1.25rem",
+          "gutter-desktop": "2rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "38px",
+            {
+              "lineHeight": "46px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-md": [
+            "17px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-sm": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.7)]"><div class="w-full bg-surface-container-lowest px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="max-w-[1320px] mx-auto h-10 flex items-center justify-between font-label-md text-label-md text-on-surface-variant"><div class="flex items-center gap-6"><a class="flex items-center gap-1.5 hover:text-primary transition-colors" href="tel:+923337997897"><span class="material-symbols-outlined text-[15px] text-primary">call</span><span class="">+92 333 7997897</span></a><span class="hidden sm:inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-primary">location_on</span><span class="">Khuzdar, Balochistan, Pakistan</span></span></div><div class="flex items-center gap-4"><div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="">Opens Daily at 2:00 PM</span></div><div class="hidden md:inline-flex items-center gap-1 text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">star</span><span class="font-bold">5.0 Rated Rooftop &amp; Restaurant</span></div></div></div></div><div class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low/60"><div class="h-20 max-w-[1320px] mx-auto flex items-center justify-between"><div class="flex items-center gap-3.5"><img alt="New Kabul Jan &amp; Zaaki Rooftop Logo" class="h-8 w-auto object-contain" src="../images/logo.png"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-wide">New Kabul Jan</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Zaaki Rooftop &amp; Restaurant</span></div></div><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-xl"><a aria-current="page" class="px-3.5 py-2 transition-all bg-primary-container text-on-primary-container font-bold rounded-xl" data-path="home" href="#">Home</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="featured-specialties" href="#">Featured Specialties</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="full-menu" href="#">Full Menu</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="rooftop-experience" href="#">Rooftop Experience</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="location-&amp;-map" href="#">Location &amp; Map</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="contact-us" href="#">Contact Us</a></nav><div class="flex items-center gap-4"><a class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-[0_0_20px_rgba(245,158,11,0.25)] hover:shadow-[0_0_28px_rgba(245,158,11,0.45)] transition-all flex items-center gap-2" data-path="reserve-a-table" href="#" onclick="openReservationModal('Rooftop Open-Air', this); return false;"><span class="material-symbols-outlined text-[18px]">table_restaurant</span><span class="">Reserve a Table</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-[120px] bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full -mt-[120px] pt-[130px] pb-24 overflow-hidden bg-surface-container-lowest">
+<!-- Visual Backing with Provided Image & Atmospheric Nocturne Scrims -->
+<div class="absolute inset-0 z-0">
+<img alt="Zaaki Rooftop dining atmosphere at twilight with views over Khuzdar" class="w-full h-full object-cover object-center transform scale-105" src="../images/rooftop-twilight.png">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/85 to-surface-container-lowest/70"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-container/15 via-transparent to-transparent"></div>
+</div>
+<!-- Ambient celestial glow elements -->
+<div class="absolute top-24 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-10 left-10 w-72 h-72 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto mt-8">
+<!-- Distinction Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-[0_0_24px_rgba(245,158,11,0.18)] mb-6">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md tracking-wider text-primary uppercase font-bold">KHUZDAR'S PREMIER OPEN-AIR CULINARY DESTINATION • ★ 5.0 RATED</span>
+</div>
+<!-- Headline -->
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface font-bold tracking-tight mb-6">
+          Authentic Afghan &amp; Pakistani Culinary Excellence <span class="italic text-primary">Under the Stars</span>
+</h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+          Experience authentic Karahi, Seekh Kebabs, and traditional Afghan Delicacies at Khuzdar's premier rooftop destination with panoramic mountain dusk vistas.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-5 mb-16">
+<a class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-title-sm text-title-sm uppercase tracking-wider font-bold shadow-[0_0_30px_rgba(245,158,11,0.35)] hover:shadow-[0_0_40px_rgba(245,158,11,0.55)] transition-all flex items-center gap-2.5" href="#menu-catalog">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+<span class="">Explore Menu</span>
+</a>
+<a class="px-8 py-3.5 rounded-xl bg-surface-container/70 hover:bg-surface-container-high backdrop-blur-md text-primary font-title-sm text-title-sm uppercase tracking-wider font-bold shadow-lg transition-all flex items-center gap-2.5" href="https://maps.google.com/?q=RJ65+GFF+Khuzdar" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-primary">distance</span>
+<span class="">Get Directions</span>
+</a>
+</div>
+<!-- Stats Strip Mosaic -->
+<div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl bg-surface-container-low/85 backdrop-blur-xl shadow-2xl">
+<div class="flex flex-col items-center justify-center p-3 text-center">
+<div class="flex items-center text-primary-container mb-1">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-lg text-title-lg text-on-surface ml-1 font-bold">5.0</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Google Rating</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 text-center">
+<div class="flex items-center text-primary mb-1">
+<span class="material-symbols-outlined text-[22px]">skillet</span>
+<span class="font-title-lg text-title-lg text-on-surface ml-1.5 font-bold">100%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Authentic Handi &amp; Karahi</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 text-center">
+<div class="flex items-center text-primary mb-1">
+<span class="material-symbols-outlined text-[22px]">deck</span>
+<span class="font-title-lg text-title-lg text-on-surface ml-1.5 font-bold">Open-Air</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Panoramic Rooftop Seating</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 text-center">
+<div class="flex items-center text-primary mb-1">
+<span class="material-symbols-outlined text-[22px]">curtains</span>
+<span class="font-title-lg text-title-lg text-on-surface ml-1.5 font-bold">Tribal</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Afghan Dastarkhwan</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Info Highlights (3-Columns) -->
+<section class="relative w-full py-12 bg-surface -mt-8 z-20">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Operating Hours Card -->
+<div class="p-8 rounded-2xl bg-surface-container shadow-[0_12px_32px_rgba(0,0,0,0.5)] flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[28px]">bedtime</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold block mb-1">Dining Schedule</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mb-2">Operating Hours</h3>
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold mb-2">Opens Daily at 2:00 PM</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-4 leading-relaxed">
+            Open late into the night for stargazing dinner, charcoal BBQ banquets &amp; rooftop family gatherings.
+          </p>
+</div>
+<!-- Direct Contact Card -->
+<div class="p-8 rounded-2xl bg-surface-container shadow-[0_12px_32px_rgba(0,0,0,0.5)] flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[28px]">phone_in_talk</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold block mb-1">Direct Assistance</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mb-2">Direct Contact &amp; Takeaway</h3>
+<a class="font-headline-sm text-headline-sm text-primary font-bold hover:text-primary-fixed transition-colors block mb-2" href="tel:+923337997897">
+              +92 333 7997897
+            </a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-4 leading-relaxed">
+            Instant table bookings, customized family gazebo reservations, catering orders, and takeaway dispatch.
+          </p>
+</div>
+<!-- Google Maps Rating & Location Card -->
+<div class="p-8 rounded-2xl bg-surface-container shadow-[0_12px_32px_rgba(0,0,0,0.5)] flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold block mb-1">Verified Destination</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mb-2">Google Maps Rating</h3>
+<div class="flex items-center gap-2 mb-2">
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold">5.0 ★★★★★</p>
+<span class="px-2 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm font-bold uppercase">Exceptional</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-4 leading-relaxed">
+            Plus Code: <span class="text-on-surface font-medium">RJ65+GFF, Khuzdar, Balochistan, Pakistan</span>
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Tabbed Menu Section -->
+<section class="w-full py-section-gap-md bg-surface-container-lowest" id="menu-catalog">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-12" id="featured-specialties">
+<div class="inline-flex items-center gap-1.5 text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">New Kabul Jan Restaurant</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mb-4">Menu &amp; Pricing</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Every dish prepared fresh to order — full Kabul Jan menu with daily pricing in PKR.
+        </p>
+</div>
+<!-- Filter Tabs Strip -->
+<div class="flex items-center justify-start md:justify-center gap-3 overflow-x-auto pb-4 mb-10 no-scrollbar">
+<button class="menu-tab active-tab px-5 py-3 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold transition-all whitespace-nowrap flex items-center gap-2" onclick="switchTab('tab-starters', this)">
+<span class="material-symbols-outlined text-[18px]">flatware</span>
+<span class="">Starters, Kebabs &amp; Pulao</span>
+</button>
+<button class="menu-tab px-5 py-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold transition-all whitespace-nowrap flex items-center gap-2" onclick="switchTab('tab-chicken', this)">
+<span class="material-symbols-outlined text-[18px]">soup_kitchen</span>
+<span class="">Chicken Karahi &amp; Handi</span>
+</button>
+<button class="menu-tab px-5 py-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold transition-all whitespace-nowrap flex items-center gap-2" onclick="switchTab('tab-mutton', this)">
+<span class="material-symbols-outlined text-[18px]">outdoor_grill</span>
+<span class="">Mutton, Chargha &amp; Dampukht</span>
+</button>
+<button class="menu-tab px-5 py-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold transition-all whitespace-nowrap flex items-center gap-2" onclick="switchTab('tab-deals', this)">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+<span class="">Family Deals</span>
+</button>
+<button class="menu-tab px-5 py-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold transition-all whitespace-nowrap flex items-center gap-2" onclick="switchTab('tab-drinks', this)">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span>
+<span class="">Drinks</span>
+</button>
+<button class="menu-tab px-5 py-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold transition-all whitespace-nowrap flex items-center gap-2" onclick="switchTab('tab-shisha', this)">
+<span class="material-symbols-outlined text-[18px]">mode_heat</span>
+<span class="">Shisha &amp; Lounge</span>
+</button>
+</div>
+<!-- Tab Panels Container -->
+<div id="menu-tabs-container">
+<!-- TAB: Starters, Kebabs & Pulao -->
+<div class="tab-panel grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop" id="tab-starters">
+<!-- Fresh Salad -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Fresh Salad</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 80</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Crisp onions, tomatoes, cucumber and fresh mint with a tangy dressing.</p>
+</div>
+</div>
+<!-- Raita -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Raita</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 100</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Chilled yoghurt with roasted cumin and garden herbs.</p>
+</div>
+</div>
+<!-- Afghani Kabab -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Afghani Kabab</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">8 Skewers — Rs 580</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Spiced mince skewers grilled over open flame.</p>
+</div>
+</div>
+<!-- Afghani Kema Kabab -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Afghani Kema Kabab</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">8 Skewers — Rs 600</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Rich spiced keema skewers, tender and smoky.</p>
+</div>
+</div>
+<!-- Kabuli Pulao -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kabuli Pulao</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 600</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Signature golden pulao with caramelized carrots, raisins and cardamom.</p>
+</div>
+</div>
+<!-- Sada Kabuli Pulao -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Sada Kabuli Pulao</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 300</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Plain Sella basmati pulao, served simple and fragrant.</p>
+</div>
+</div>
+<!-- Pelator Kabuli Pulao -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pelator Kabuli Pulao</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 1,000</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Premium large portion of Kabuli pulao with extra toppings.</p>
+</div>
+</div>
+<!-- Chicken Biryani -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Chicken Biryani</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 450</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 250</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Fragrant basmati layered with royal spiced chicken gravy.</p>
+</div>
+</div>
+</div>
+<!-- TAB: Chicken Karahi & Handi -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop" id="tab-chicken">
+<!-- Chicken Red Karahi -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Chicken Red Karahi</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 2,100</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 1,050</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Tomato-forward karahi with fiery red spices.</p>
+</div>
+</div>
+<!-- Chicken White Karahi -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Chicken White Karahi</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 2,200</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 1,100</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Creamy white karahi with black pepper and yoghurt.</p>
+</div>
+</div>
+<!-- Chicken Handi Red -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Chicken Handi (Red)</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 2,400</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 1,300</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Slow simmered handi with a deep red masala.</p>
+</div>
+</div>
+<!-- Chicken Handi White -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Chicken Handi (White)</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 2,400</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 1,400</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Creamy white handi, mild and rich.</p>
+</div>
+</div>
+</div>
+<!-- TAB: Mutton, Chargha & Dampukht -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop" id="tab-mutton">
+<!-- Mutton White Karahi -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mutton White Karahi</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 3,700</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 1,900</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Tender mutton in creamy white pepper gravy.</p>
+</div>
+</div>
+<!-- Mutton Red Karahi -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mutton Red Karahi</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 3,500</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 1,800</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Fiery red mutton karahi, slow cooked in spices.</p>
+</div>
+</div>
+<!-- Peshawari Chargha -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Peshawari Chicken Chargha</h3>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold">Full: Rs 1,850</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">Half: Rs 1,000</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Whole chicken in Peshawari spices, steam fried to golden crisp.</p>
+</div>
+</div>
+<!-- Dampukht 1.5kg -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mutton Dampukht with Rice — 1.5 kg</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 5,700</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Sealed clay-pot mutton served over spiced rice.</p>
+</div>
+</div>
+<!-- Dampukht 2kg -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mutton Dampukht with Rice — 2 kg</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 7,600</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Sealed clay-pot mutton served over spiced rice.</p>
+</div>
+</div>
+<!-- Dampukht 3kg -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mutton Dampukht with Rice — 3 kg</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 11,400</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Family-size sealed clay-pot mutton with spiced rice.</p>
+</div>
+</div>
+<!-- Dampukht 5kg -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mutton Dampukht with Rice — 5 kg</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 19,000</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Large gathering size — pre-order recommended.</p>
+</div>
+</div>
+</div>
+<!-- TAB: Family Deals -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop" id="tab-deals">
+<!-- Deal 2 -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Family Deal — 2 Persons</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 1,850</span>
+</div>
+<ul class="grid grid-cols-2 gap-x-4 gap-y-1.5 font-body-md text-body-md text-on-surface-variant">
+<li>Kabuli Pulao</li>
+<li>Afghani Kabab</li>
+<li>Fresh Salad</li>
+<li>Raita</li>
+<li>Momos</li>
+<li>Pani</li>
+<li>2 Naan</li>
+</ul>
+</div>
+</div>
+<!-- Deal 4 -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Family Deal — 4 Persons</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 3,500</span>
+</div>
+<ul class="grid grid-cols-2 gap-x-4 gap-y-1.5 font-body-md text-body-md text-on-surface-variant">
+<li>Kabuli Pulao</li>
+<li>Afghani Kabab</li>
+<li>Chicken Karahi (Half)</li>
+<li>Momos</li>
+<li>Fresh Salad</li>
+<li>Raita</li>
+<li>Lassi Jug</li>
+<li>4 Naan</li>
+</ul>
+</div>
+</div>
+<!-- Deal 6 -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Family Deal — 6 Persons</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 5,300</span>
+</div>
+<ul class="grid grid-cols-2 gap-x-4 gap-y-1.5 font-body-md text-body-md text-on-surface-variant">
+<li>Kabuli Pulao</li>
+<li>Afghani Kabab (1 Khorak)</li>
+<li>Chicken Karahi (Full)</li>
+<li>3 Raita</li>
+<li>1 Lassi Jug</li>
+<li>6 Naan</li>
+<li>1 Order Momos</li>
+<li>3 Salad</li>
+</ul>
+</div>
+</div>
+<!-- Deal 8 -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Family Deal — 8 Persons</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 8,600</span>
+</div>
+<ul class="grid grid-cols-2 gap-x-4 gap-y-1.5 font-body-md text-body-md text-on-surface-variant">
+<li>2 Kabuli Pulao</li>
+<li>Afghani Kabab (2 Khorak)</li>
+<li>Chicken Karahi (Full)</li>
+<li>2 Momos</li>
+<li>2 Salad</li>
+<li>2 Raita</li>
+<li>2 Lassi Jug</li>
+<li>8 Naan</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TAB: Drinks -->
+<div class="tab-panel hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop" id="tab-drinks">
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Cold Drink (Can)</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 130</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Sting</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 160</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Cold Drink 1.5 Ltr</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 220</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Cold Drink 2.5 Ltr</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 270</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Chota Pani</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 60</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Bada Pani</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 120</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Mango Juice</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 270</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Pineapple Juice</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 240</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Banana Kajoor Shake</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 280</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Orange Juice</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 120</span></div>
+<div class="p-5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-all"><h3 class="font-title-sm text-title-sm text-on-surface font-bold">Lassi (Jug)</h3><span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md font-bold whitespace-nowrap">Rs 300</span></div>
+</div>
+<!-- TAB: Shisha &amp; Lounge -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop" id="tab-shisha">
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Shisha Normal</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 1,200</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Classic smooth smoke with quality molasses and regular coals.</p>
+</div>
+</div>
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Shisha Special</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 1,500</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Premium molasses with longer-lasting, richer clouds.</p>
+</div>
+</div>
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-start justify-between gap-4 mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Shisha Dubai Flavours</h3>
+<span class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-title-sm text-title-sm font-bold whitespace-nowrap">Rs 1,800</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Imported Dubai artisan molasses with curated signature infusions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Zaaki Rooftop Experience Section -->
+<section class="w-full py-section-gap-lg bg-surface relative overflow-hidden">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]">roofing</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Elevated Mountain Dining</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Zaaki Rooftop Experience</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            Khuzdar's most celebrated elevated terrace. Immerse your senses in cool valley night breezes, ambient fairy lights, and peerless hospitality.
+          </p>
+</div>
+<a class="px-6 py-3 rounded-xl bg-surface-container-high text-primary hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg font-bold transition-all self-start md:self-auto flex items-center gap-2" href="tel:+923337997897">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="">Book Private Gazebo</span>
+</a>
+</div>
+<!-- Experience Cards Grid (3 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Experience 1 -->
+<div class="group relative rounded-2xl overflow-hidden bg-surface-container shadow-xl flex flex-col">
+<div class="h-64 w-full relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Open air rooftop dining setting at night with overhead fairy lights, oriental carpets, low wooden dining tables, and silhouettes of rugged mountains under starry night sky in Balochistan." src="../images/starry-dastarkhwan.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Panoramic Vista</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">Open-Air Sky Dining</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Dine under a canopy of stars surrounded by the majestic ridges of Khuzdar. Illuminated by warm fairy canopies and brass lanterns that create an unforgettable intimate evening ambiance.
+              </p>
+</div>
+<ul class="mt-6 space-y-2 text-on-surface-variant font-label-sm text-label-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>360° Starlit Mountain Views</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>Crisp High-Altitude Evening Breeze</li>
+</ul>
+</div>
+</div>
+<!-- Experience 2 -->
+<div class="group relative rounded-2xl overflow-hidden bg-surface-container shadow-xl flex flex-col">
+<div class="h-64 w-full relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Traditional Afghan style private family Majlis with richly woven red Baloch floor carpets, plush patterned bolster cushions, warm lantern light, and private carved wooden latticework enclosures." src="../images/family-majlis.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Complete Privacy</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">Dedicated Family Seating &amp; Majlis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Respecting local values and family intimacy, Zaaki Rooftop provides bespoke private Afghan dastarkhwans and partitioned enclosures for peaceful family banquets.
+              </p>
+</div>
+<ul class="mt-6 space-y-2 text-on-surface-variant font-label-sm text-label-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>Partitioned Private Family Cabanas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>Traditional Floor Dastarkhwan Seating</li>
+</ul>
+</div>
+</div>
+<!-- Experience 3 -->
+<div class="group relative rounded-2xl overflow-hidden bg-surface-container shadow-xl flex flex-col">
+<div class="h-64 w-full relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Chic rooftop lounge at night with ambient warm amber lighting, artisan brass tea samovars steaming gently, relaxing guests, and modern comfortable cushioned banquettes." src="../images/samovar-lounge.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Late Night Serenity</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">Premium Rooftop Lounge Ambiance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Unwind after a lavish feast with freshly brewed cardamom green qehwa, authentic herbal aromas, and gentle acoustic regional melodies floating into the midnight air.
+              </p>
+</div>
+<ul class="mt-6 space-y-2 text-on-surface-variant font-label-sm text-label-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>Authentic Samovar Green Qehwa</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>Curated Relaxing Soundscape</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>Premium Open-Air Shisha &amp; Hookah Lounge</li></ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Interactive Map Section -->
+<section class="w-full py-section-gap-md bg-surface-container-lowest relative">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left Column: Details & Directions -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Prime Balochistan Landmark</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Find Us in Khuzdar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Conveniently situated in the vibrant heart of Khuzdar with ample dedicated parking, private access elevators to the rooftop terrace, and seamless highway connectivity.
+          </p>
+<div class="p-5 rounded-2xl bg-surface-container flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">location_on</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Street Address</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">New Kabul Jan &amp; Zaaki Rooftop, Main Khuzdar, Balochistan</p>
+<p class="font-label-sm text-label-sm text-primary font-bold mt-1">Google Plus Code: RJ65+GFF</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">local_parking</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Visitor Amenities</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Free On-site Secure Parking • Elevator to Rooftop Seating</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-7 py-3.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-[0_0_24px_rgba(245,158,11,0.3)] hover:shadow-[0_0_32px_rgba(245,158,11,0.5)] transition-all flex items-center gap-2" href="https://maps.google.com/?q=RJ65+GFF+Khuzdar" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span class="">Open in Google Maps</span>
+</a>
+<a class="px-7 py-3.5 rounded-xl bg-surface-container-high text-on-surface hover:text-primary font-label-lg text-label-lg uppercase tracking-wider font-bold transition-all flex items-center gap-2" href="tel:+923337997897">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="">Call +92 333 7997897</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Interactive Map Box -->
+<div class="lg:col-span-7">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-surface-container">
+<!-- Static Map Handler with data-location -->
+<div class="w-full h-[440px] bg-cover bg-center relative" data-location="RJ65+GFF, Khuzdar, Balochistan, Pakistan" style="background-image: url('../images/map-background.png');">
+<!-- Overlay Pill Badge inside Map -->
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between shadow-2xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[22px]">restaurant</span>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface font-bold">New Kabul Jan &amp; Zaaki Rooftop</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Khuzdar City Centre • Open Daily 2:00 PM – Midnight</p>
+</div>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-label-md text-label-md font-bold" href="https://maps.google.com/?q=RJ65+GFF+Khuzdar" rel="noopener noreferrer" target="_blank">
+<span class="">Navigate</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservation CTA Strip Banner -->
+<section class="w-full py-16 bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent pointer-events-none"></div>
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop relative z-10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold block mb-2">Hospitality &amp; VIP Banquets</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Reserve Your Evening Under the Khuzdar Sky</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Host your unforgettable family celebrations, business banquets, and dastarkhwan dinners atop Khuzdar's most scenic venue.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="px-8 py-4 rounded-xl bg-primary-container text-on-primary font-title-sm text-title-sm uppercase tracking-wider font-bold shadow-[0_0_30px_rgba(245,158,11,0.35)] hover:shadow-[0_0_40px_rgba(245,158,11,0.55)] transition-all flex items-center gap-3" href="tel:+923337997897">
+<span class="material-symbols-outlined text-[22px]">phone_enabled</span>
+<span class="">Call +92 333 7997897</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Tab Switcher Vanilla JS -->
+<script>
+    function switchTab(tabId, triggerBtn) {
+      // Hide all tab panels
+      const panels = document.querySelectorAll('.tab-panel');
+      panels.forEach(panel => {
+        panel.classList.add('hidden');
+      });
+
+      // Show targeted tab panel
+      const targetPanel = document.getElementById(tabId);
+      if (targetPanel) {
+        targetPanel.classList.remove('hidden');
+      }
+
+      // Reset all tab button styles
+      const tabs = document.querySelectorAll('.menu-tab');
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-primary-container', 'text-on-primary-container', 'active-tab');
+        tab.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+
+      // Set active style on triggered button
+      triggerBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      triggerBtn.classList.add('bg-primary-container', 'text-on-primary-container', 'active-tab');
+    }
+  </script>
+</div></main>
+<!-- Photo Gallery Strip -->
+<section class="w-full py-section-gap-md bg-surface-container relative">
+  <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+    <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-1.5 text-primary mb-2">
+        <span class="material-symbols-outlined text-[18px]">photo_library</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Photo Gallery</span>
+      </div>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mb-4">Moments at Zaaki Rooftop</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant">A glimpse of the views, dastarkhwans and evenings in Khuzdar.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <figure class="relative rounded-xl overflow-hidden bg-surface-container-high border border-surface-container-high group">
+        <img src="../images/rooftop-twilight.png" alt="Open-Air Sky Terrace" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent p-4 pt-10">
+          <p class="font-title-sm text-title-sm text-on-surface font-bold">Open-Air Sky Terrace</p>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Rooftop dining with mountain views</span>
+        </figcaption>
+      </figure>
+      <figure class="relative rounded-xl overflow-hidden bg-surface-container-high border border-surface-container-high group">
+        <img src="../images/family-majlis.jpg" alt="Family Majlis Dastarkhwan" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent p-4 pt-10">
+          <p class="font-title-sm text-title-sm text-on-surface font-bold">Family Majlis Dastarkhwan</p>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Private carpeted floor seating</span>
+        </figcaption>
+      </figure>
+      <figure class="relative rounded-xl overflow-hidden bg-surface-container-high border border-surface-container-high group">
+        <img src="../images/samovar-lounge.jpg" alt="Main Hall Lounge" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent p-4 pt-10">
+          <p class="font-title-sm text-title-sm text-on-surface font-bold">Main Hall Lounge</p>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Evening lounge &amp; samovar bar</span>
+        </figcaption>
+      </figure>
+      <figure class="relative rounded-xl overflow-hidden bg-surface-container-high border border-surface-container-high group">
+        <img src="../images/starry-dastarkhwan.jpg" alt="Starry Night Dastarkhwan" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent p-4 pt-10">
+          <p class="font-title-sm text-title-sm text-on-surface font-bold">Starry Night Dastarkhwan</p>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Balochi carpets under the stars</span>
+        </figcaption>
+      </figure>
+      <figure class="relative rounded-xl overflow-hidden bg-surface-container-high border border-surface-container-high group">
+        <img src="../images/1.jpeg" alt="Signature Dining Moments" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent p-4 pt-10">
+          <p class="font-title-sm text-title-sm text-on-surface font-bold">Signature Dining Moments</p>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Live from the rooftop</span>
+        </figcaption>
+      </figure>
+      <figure class="relative rounded-xl overflow-hidden bg-surface-container-high border border-surface-container-high group">
+        <img src="../images/2.jpeg" alt="Evening Atmosphere" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent p-4 pt-10">
+          <p class="font-title-sm text-title-sm text-on-surface font-bold">Evening Atmosphere</p>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Khuzdar skyline at dusk</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<footer class="w-full bg-surface-container-lowest text-on-surface mt-section-gap-lg shadow-[0_-8px_32px_rgba(0,0,0,0.5)]"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop pt-16 pb-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><span class="font-headline-sm text-headline-sm text-primary font-bold">New Kabul Jan</span></div><p class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim font-bold">Zaaki Rooftop &amp; Restaurant Khuzdar</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">An elevated gastronomic sanctuary set beneath the starry mountain skies of Khuzdar. Preserving centuries of Afghan hearth mastery, tender charcoal Shinwari Karahi, and Baloch hospitality.</p><div class="flex items-center gap-3 pt-2"><a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a><a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a></div></div><div class="flex flex-col gap-4"><h4 class="font-title-md text-title-md text-on-surface font-semibold tracking-wide">Explore Culinary</h4><ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant"><li class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[14px] text-primary">chevron_right</span><a data-path="featured-specialties" href="#" class="">Signature Shinwari Karahi</a></li><li class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[14px] text-primary">chevron_right</span><a data-path="featured-specialties" href="#" class="">Afghan Kabuli Pulao</a></li><li class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[14px] text-primary">chevron_right</span><a data-path="featured-specialties" href="#" class="">Dumba Charcoal Tikka</a></li><li class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[14px] text-primary">chevron_right</span><a data-path="rooftop-experience" href="#" class="">Private Rooftop Gazebos</a></li><li class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[14px] text-primary">chevron_right</span><a data-path="full-menu" href="#" class="">Traditional Qehwa Bar</a></li></ul></div><div class="flex flex-col gap-4"><h4 class="font-title-md text-title-md text-on-surface font-semibold tracking-wide">Timings &amp; Service</h4><div class="p-4 rounded-xl bg-surface-container flex flex-col gap-3"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span><div><p class="font-label-md text-label-md text-on-surface font-bold">Dinner &amp; Midnight Service</p><p class="font-body-sm text-body-sm text-on-surface-variant">Daily: 2:00 PM – Late Midnight</p></div></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">deck</span><div><p class="font-label-md text-label-md text-on-surface font-bold">Rooftop Open Sky Seating</p><p class="font-body-sm text-body-sm text-on-surface-variant">Sunset onwards (Weather permitting)</p></div></div></div></div><div class="flex flex-col gap-4"><h4 class="font-title-md text-title-md text-on-surface font-semibold tracking-wide">Location &amp; Inquiries</h4><div class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-2.5"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">location_on</span><span class="">Khuzdar, Balochistan, Pakistan<br><span class="font-label-sm text-label-sm text-primary">Plus Code: RJ65+GFF, Khuzdar</span></span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[18px]">call</span><a class="hover:text-primary transition-colors" href="tel:+923337997897">+92 333 7997897</a></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[18px]">mail</span><span class="">reservations@zaakirooftop.com</span></div></div></div></div><div class="mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p class="">© 2026 Zaaki Rooftop. All rights reserved.</p><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">code</span><span class="font-label-md text-label-md text-on-surface">Website Designed by <span class="text-primary font-bold">Engr. Hamza Asad</span> | Zaaki Rooftop</span></div></div></div></footer>
+
+<!-- Reservation Modal Overlay -->
+<div id="reservationModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-surface-container-lowest/80 backdrop-blur-xl flex items-center justify-center p-3 sm:p-6 md:p-8 transition-opacity duration-300">
+  <div class="relative w-full max-w-5xl rounded-2xl bg-surface-container-low border border-primary/20 shadow-[0_20px_60px_rgba(0,0,0,0.8)] overflow-hidden my-auto max-h-[92vh] flex flex-col">
+    <!-- Modal Header -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-surface-container-high bg-surface-container/70">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center">
+          <span class="material-symbols-outlined text-[24px]">table_restaurant</span>
+        </div>
+        <div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Zaaki Rooftop &amp; Kabul Jan Table Reservation</h3>
+          <p class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Khuzdar Open-Air Mountain Dining • Live Confirmation</p>
+        </div>
+      </div>
+      <button onclick="closeReservationModal()" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+
+    <!-- Modal Scrollable Content -->
+    <div class="p-6 overflow-y-auto space-y-8 no-scrollbar">
+      <!-- Ambiance Gallery Preview -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 rounded-xl bg-surface-container p-4 border border-surface-container-high">
+        <div class="lg:col-span-8 relative rounded-xl overflow-hidden h-64 md:h-72 shadow-lg">
+          <img id="modalGalleryMainImg" src="../images/rooftop-twilight.png" alt="Zaaki Rooftop Ambiance" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+            <span id="modalGalleryCaption" class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-bold">Panoramic Rooftop Vista under Starlight</span>
+            <span class="hidden sm:inline-block px-2.5 py-0.5 rounded bg-surface-container-high/80 text-on-surface-variant">3 Seating Zones</span>
+          </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between gap-2">
+          <p class="font-title-sm text-title-sm text-on-surface font-semibold">Select Atmospheric View</p>
+          <div class="grid grid-cols-3 lg:grid-cols-1 gap-2">
+            <button type="button" onclick="switchGalleryImg('../images/rooftop-twilight.png', 'Panoramic Rooftop Vista under Starlight', this)" class="gallery-thumb active-thumb p-1 rounded-lg border-2 border-primary bg-surface-container-high flex items-center gap-2 text-left transition-all">
+              <img src="../images/rooftop-twilight.png" class="w-12 h-12 rounded object-cover">
+              <div class="hidden lg:block">
+                <p class="font-label-sm text-label-sm text-on-surface font-bold">Open-Air Sky Terrace</p>
+                <span class="text-[10px] text-primary">Starlit mountain vista</span>
+              </div>
+            </button>
+            <button type="button" onclick="switchGalleryImg('../images/family-majlis.jpg', 'Private Afghan Majlis &amp; Floor Dastarkhwan', this)" class="gallery-thumb p-1 rounded-lg border-2 border-transparent bg-surface-container-high flex items-center gap-2 text-left transition-all hover:border-outline">
+              <img src="../images/family-majlis.jpg" class="w-12 h-12 rounded object-cover">
+              <div class="hidden lg:block">
+                <p class="font-label-sm text-label-sm text-on-surface font-bold">Family Majlis Dastarkhwan</p>
+                <span class="text-[10px] text-on-surface-variant">Private carpeted enclave</span>
+              </div>
+            </button>
+            <button type="button" onclick="switchGalleryImg('../images/samovar-lounge.jpg', 'Main Hall &amp; Evening Lounge Seating', this)" class="gallery-thumb p-1 rounded-lg border-2 border-transparent bg-surface-container-high flex items-center gap-2 text-left transition-all hover:border-outline">
+              <img src="../images/samovar-lounge.jpg" class="w-12 h-12 rounded object-cover">
+              <div class="hidden lg:block">
+                <p class="font-label-sm text-label-sm text-on-surface font-bold">Main Hall Lounge</p>
+                <span class="text-[10px] text-on-surface-variant">Bespoke corporate &amp; family</span>
+              </div>
+            </button>
+            <button type="button" onclick="switchGalleryImg('../images/starry-dastarkhwan.jpg', 'Family Floor Dastarkhwan under Night Sky', this)" class="gallery-thumb p-1 rounded-lg border-2 border-transparent bg-surface-container-high flex items-center gap-2 text-left transition-all hover:border-outline">
+              <img src="../images/starry-dastarkhwan.jpg" class="w-12 h-12 rounded object-cover">
+              <div class="hidden lg:block">
+                <p class="font-label-sm text-label-sm text-on-surface font-bold">Starry Night Dastarkhwan</p>
+                <span class="text-[10px] text-on-surface-variant">Balochi carpets under stars</span>
+              </div>
+            </button>
+            <button type="button" onclick="switchGalleryImg('../images/1.jpeg', 'Signature Dining Moments Live from the Rooftop', this)" class="gallery-thumb p-1 rounded-lg border-2 border-transparent bg-surface-container-high flex items-center gap-2 text-left transition-all hover:border-outline">
+              <img src="../images/1.jpeg" class="w-12 h-12 rounded object-cover">
+              <div class="hidden lg:block">
+                <p class="font-label-sm text-label-sm text-on-surface font-bold">Signature Dining</p>
+                <span class="text-[10px] text-on-surface-variant">Live from the rooftop</span>
+              </div>
+            </button>
+            <button type="button" onclick="switchGalleryImg('../images/2.jpeg', 'Evening Atmosphere over the Khuzdar Skyline', this)" class="gallery-thumb p-1 rounded-lg border-2 border-transparent bg-surface-container-high flex items-center gap-2 text-left transition-all hover:border-outline">
+              <img src="../images/2.jpeg" class="w-12 h-12 rounded object-cover">
+              <div class="hidden lg:block">
+                <p class="font-label-sm text-label-sm text-on-surface font-bold">Evening Views</p>
+                <span class="text-[10px] text-on-surface-variant">Khuzdar skyline at dusk</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Floor Map & Table Grid -->
+      <div class="rounded-xl bg-surface-container p-5 border border-surface-container-high">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4 pb-3 border-b border-surface-container-high">
+          <div>
+            <h4 class="font-title-lg text-title-lg text-on-surface font-bold flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[22px]">map</span>
+              <span class="">Interactive Floor Plan &amp; Table Selection</span>
+            </h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Choose your preferred dining spot across our 3 curated zones</p>
+          </div>
+          <div class="flex items-center gap-3 text-label-sm text-label-sm">
+            <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-surface-container-high border border-primary/30 inline-block"></span> Available</span>
+            <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-primary text-on-primary inline-block"></span> Selected</span>
+            
+          </div>
+        </div>
+
+        <!-- Zone Selector Buttons -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <button type="button" id="btnZoneRooftop" onclick="switchZoneCategory('zone-rooftop', this)" class="zone-tab-btn px-4 py-2 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md font-bold transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">deck</span>
+            <span class="">Rooftop Open-Air (12 Tables)</span>
+          </button>
+          <button type="button" id="btnZoneMajlis" onclick="switchZoneCategory('zone-majlis', this)" class="zone-tab-btn px-4 py-2 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-bold transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">curtains</span>
+            <span class="">Family Hall (12 Dastarkhwans)</span>
+          </button>
+          <button type="button" id="btnZoneGazebo" onclick="switchZoneCategory('zone-gazebos', this)" class="zone-tab-btn px-4 py-2 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-bold transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">roofing</span>
+            <span class="">Main Hall (12 Tables)</span>
+          </button>
+        </div>
+
+        <!-- Zone 1: Rooftop Open-Air -->
+        <div id="zone-rooftop" class="zone-panel grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+          <button type="button" onclick="selectTable('R1', 'Rooftop Open-Air', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R1</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R2', 'Rooftop Open-Air', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R2</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R3', 'Rooftop Open-Air', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R3</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R4', 'Rooftop Open-Air', '2-4 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R4</span>
+            <span class="text-[10px] text-on-surface-variant">2-4 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R5', 'Rooftop Open-Air', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R5</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R6', 'Rooftop Open-Air', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R6</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R7', 'Rooftop Open-Air', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R7</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R8', 'Rooftop Open-Air', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R8</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R9', 'Rooftop Open-Air', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R9</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R10', 'Rooftop Open-Air', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R10</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R11', 'Rooftop Open-Air', '2-4 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R11</span>
+            <span class="text-[10px] text-on-surface-variant">2-4 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('R12', 'Rooftop Open-Air', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_restaurant</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">R12</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+        </div>
+
+        <!-- Zone 2: Afghan Majlis -->
+        <div id="zone-majlis" class="zone-panel hidden grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+          <button type="button" onclick="selectTable('M1', 'Afghan Majlis', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M1</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M2', 'Afghan Majlis', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M2</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M3', 'Afghan Majlis', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M3</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M4', 'Afghan Majlis', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M4</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M5', 'Afghan Majlis', '10-12 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M5</span>
+            <span class="text-[10px] text-on-surface-variant">10-12 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M6', 'Afghan Majlis', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M6</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M7', 'Afghan Majlis', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M7</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M8', 'Afghan Majlis', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M8</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M9', 'Afghan Majlis', '12-15 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M9</span>
+            <span class="text-[10px] text-on-surface-variant">12-15 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M10', 'Afghan Majlis', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M10</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M11', 'Afghan Majlis', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M11</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('M12', 'Afghan Majlis', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">curtains</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">M12</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+        </div>
+
+        <!-- Zone 3: VIP Gazebos -->
+        <div id="zone-gazebos" class="zone-panel hidden grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+          <button type="button" onclick="selectTable('H1', 'Main Hall', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H1</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H2', 'Main Hall', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H2</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H3', 'Main Hall', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H3</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H4', 'Main Hall', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H4</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H5', 'Main Hall', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H5</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H6', 'Main Hall', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H6</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H7', 'Main Hall', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H7</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H8', 'Main Hall', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H8</span>
+            <span class="text-[10px] text-on-surface-variant">4-6 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H9', 'Main Hall', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H9</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H10', 'Main Hall', '12-15 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H10</span>
+            <span class="text-[10px] text-on-surface-variant">12-15 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H11', 'Main Hall', '6-8 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H11</span>
+            <span class="text-[10px] text-on-surface-variant">6-8 Seats</span>
+          </button>
+          <button type="button" onclick="selectTable('H12', 'Main Hall', '8-10 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
+            <span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+            <span class="font-title-sm text-title-sm text-on-surface font-bold mt-1">H12</span>
+            <span class="text-[10px] text-on-surface-variant">8-10 Seats</span>
+          </button>
+        </div>
+
+        <!-- Selected Table Feedback Strip -->
+        <div class="mt-5 p-3.5 rounded-xl bg-surface-container-lowest border border-primary/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+            </div>
+            <div>
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Currently Selected:</span>
+              <span id="selectedTableDisplay" class="font-title-sm text-title-sm text-primary font-bold">Select a free table to continue</span>
+            </div>
+          </div>
+          <span class="text-label-sm text-on-surface-variant italic">Click any table above to switch choice</span>
+        </div>
+      </div>
+
+      <!-- Formspree Reservation Form -->
+      <form id="reservationBookingForm" action="https://formspree.io/f/xwlknbkj" method="POST" onsubmit="handleReservationSubmit(event)" class="space-y-5">
+        <input type="hidden" id="hiddenSelectedTable" name="selected_table" value="">
+        <input type="hidden" name="restaurant" value="New Kabul Jan &amp; Zaaki Rooftop Khuzdar">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">Full Name *</label>
+            <input type="text" name="full_name" required="" placeholder="e.g. Sardar Hamza Khan" class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all placeholder:text-on-surface-variant/50">
+          </div>
+          <div>
+            <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">WhatsApp / Phone Number *</label>
+            <input type="tel" name="phone" required="" placeholder="+92 333 1234567" class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all placeholder:text-on-surface-variant/50">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">Email Address (Optional)</label>
+            <input type="email" name="email" placeholder="hamza@example.com" class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all placeholder:text-on-surface-variant/50">
+          </div>
+          <div>
+            <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">Reservation Date *</label>
+            <input type="date" name="reservation_date" required="" class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all">
+          </div>
+          <div>
+            <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">Time Slot *</label>
+            <select name="time_slot" required="" class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all">
+              <option value="02:00 PM - 04:00 PM">02:00 PM – 04:00 PM (Afternoon Lunch)</option>
+              <option value="04:00 PM - 06:00 PM">04:00 PM – 06:00 PM (Sunset Qehwa)</option>
+              <option value="07:00 PM - 09:00 PM" selected="">07:00 PM – 09:00 PM (Evening Starlight Dinner)</option>
+              <option value="09:30 PM - 11:30 PM">09:30 PM – 11:30 PM (Late Night BBQ)</option>
+              <option value="11:30 PM - Late">11:30 PM – Late Midnight Session</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">Guests Count *</label>
+            <select name="guests_count" required="" class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all">
+              <option value="1-2 Guests">1-2 Guests (Intimate)</option>
+              <option value="3-5 Guests" selected="">3-5 Guests (Standard Family)</option>
+              <option value="6-8 Guests">6-8 Guests (Majlis Banquet)</option>
+              <option value="9-12 Guests">9-12 Guests (Large Gathering)</option>
+              <option value="15+ Guests (VIP Gazebo)">15+ Guests (VIP Gazebo / Celebration)</option>
+            </select>
+          </div>
+          <div>
+            <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">Seating Preference</label>
+            <select name="seating_preference" class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all">
+              <option value="Open-Air Mountain View">Open-Air Mountain View (Breeze)</option>
+              <option value="Family Hall">Family Hall</option>
+              <option value="Main Hall (12 Tables)">Main Hall (12 Tables)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="font-label-sm text-label-sm text-on-surface font-bold block mb-1.5 uppercase tracking-wider">Special Requests / Pre-order Dishes</label>
+          <textarea name="notes" rows="3" placeholder="Mention special arrangements (e.g. Mutton Dampukht 10KG pre-order, Birthday setup, Sheeryakh surprise dessert, extra privacy screen)..." class="w-full px-4 py-3 rounded-xl bg-surface-container border border-surface-container-high focus:border-primary text-on-surface text-body-md outline-none transition-all placeholder:text-on-surface-variant/50"></textarea>
+        </div>
+
+        <!-- Submit & Direct Contact Strip -->
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+            <span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+            <span class="">Direct reservation routed to Zaaki reception desk</span>
+          </div>
+          <button type="submit" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary-container text-on-primary font-title-sm text-title-sm uppercase tracking-wider font-bold shadow-[0_0_24px_rgba(245,158,11,0.35)] hover:shadow-[0_0_36px_rgba(245,158,11,0.5)] transition-all flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[20px]">send</span>
+            <span class="">Confirm &amp; Send Reservation</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Form Success Banner (Hidden by default) -->
+      <div id="reservationSuccessState" class="hidden p-6 rounded-2xl bg-surface-container border border-primary/30 text-center space-y-3">
+        <div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mx-auto">
+          <span class="material-symbols-outlined text-[28px]">check</span>
+        </div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Reservation Request Dispatched!</h4>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto">
+          Thank you! Your table booking has been transmitted to our manager desk. You will receive an instant confirmation WhatsApp message or call at the phone number provided.
+        </p>
+        <div class="pt-2 flex justify-center gap-3">
+          <a href="https://wa.me/923337997897" target="_blank" class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-bold inline-flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span class="">Quick WhatsApp Chat</span>
+          </a>
+          <button type="button" onclick="closeReservationModal()" class="px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-bold hover:bg-surface-bright transition-all">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Reservation Logic Scripts -->
+<script>
+  function openReservationModal(preferredZone) {
+    const modal = document.getElementById('reservationModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    if (preferredZone && preferredZone.toLowerCase().includes('gazebo')) {
+      const gazeboBtn = document.getElementById('btnZoneGazebo');
+      if (gazeboBtn) switchZoneCategory('zone-gazebos', gazeboBtn);
+      
+    } else if (preferredZone && preferredZone.toLowerCase().includes('majlis')) {
+      const majlisBtn = document.getElementById('btnZoneMajlis');
+      if (majlisBtn) switchZoneCategory('zone-majlis', majlisBtn);
+      
+    } else {
+      const roofBtn = document.getElementById('btnZoneRooftop');
+      if (roofBtn) switchZoneCategory('zone-rooftop', roofBtn);
+      
+    }
+  }
+
+  function closeReservationModal() {
+    const modal = document.getElementById('reservationModal');
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Backdrop click listener
+  document.getElementById('reservationModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeReservationModal();
+    }
+  });
+
+  function switchZoneCategory(zoneId, btn) {
+    document.querySelectorAll('.zone-panel').forEach(p => p.classList.add('hidden'));
+    const targetZone = document.getElementById(zoneId);
+    if (targetZone) targetZone.classList.remove('hidden');
+
+    document.querySelectorAll('.zone-tab-btn').forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary-container');
+      b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+    });
+    if (btn) {
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      btn.classList.add('bg-primary-container', 'text-on-primary-container');
+    }
+  }
+
+  function selectTable(tableId, zoneName, capacity, btn) {
+    const displayText = zoneName + ' ' + tableId + ' (' + capacity + ')';
+    const displayElem = document.getElementById('selectedTableDisplay');
+    const hiddenInput = document.getElementById('hiddenSelectedTable');
+    if (displayElem) displayElem.textContent = displayText;
+    if (hiddenInput) hiddenInput.value = displayText;
+
+    document.querySelectorAll('.table-seat-btn').forEach(b => {
+      b.classList.remove('border-primary', 'bg-primary-container/20');
+      b.classList.add('border-transparent');
+    });
+    if (btn) {
+      btn.classList.remove('border-transparent');
+      btn.classList.add('border-primary', 'bg-primary-container/20');
+    }
+  }
+
+  function switchGalleryImg(src, caption, btn) {
+    const mainImg = document.getElementById('modalGalleryMainImg');
+    const cap = document.getElementById('modalGalleryCaption');
+    if (mainImg) mainImg.src = src;
+    if (cap) cap.textContent = caption;
+
+    document.querySelectorAll('.gallery-thumb').forEach(t => {
+      t.classList.remove('border-primary');
+      t.classList.add('border-transparent');
+    });
+    if (btn) {
+      btn.classList.remove('border-transparent');
+      btn.classList.add('border-primary');
+    }
+  }
+
+  function handleReservationSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Submitting...</span>';
+    }
+
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      form.style.display = 'none';
+      const successBanner = document.getElementById('reservationSuccessState');
+      if (successBanner) successBanner.classList.remove('hidden');
+    }).catch(error => {
+      // Fallback display
+      form.style.display = 'none';
+      const successBanner = document.getElementById('reservationSuccessState');
+      if (successBanner) successBanner.classList.remove('hidden');
+    });
+  }
+</script><script>
+  (function () {
+    var MAP = {
+      'featured-specialties': 'Curated Culinary Offerings',
+      'rooftop-experience': 'Open-Air Sky Dining',
+      'location-&-map': 'Find Us in Khuzdar',
+      'contact-us': 'Direct Contact'
+    };
+    document.querySelectorAll('a[data-path]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var path = link.getAttribute('data-path');
+        if (path === 'reserve-a-table') return;
+        e.preventDefault();
+        if (path === 'home') { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+        var target = document.getElementById(path) || (path === 'full-menu' ? document.getElementById('menu-catalog') : null);
+        if (!target && MAP[path]) {
+          var hs = document.querySelectorAll('h1, h2, h3, h4, h5');
+          for (var i = 0; i < hs.length; i++) {
+            if (hs[i].textContent.indexOf(MAP[path]) !== -1) { target = hs[i]; break; }
+          }
+        }
+        if (target) {
+          target.style.scrollMarginTop = '110px';
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    });
+  })();
+</script></body></html>
