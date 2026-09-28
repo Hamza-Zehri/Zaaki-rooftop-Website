@@ -1063,47 +1063,6 @@
 
     <!-- Modal Scrollable Content -->
     <div class="p-6 overflow-y-auto space-y-8 no-scrollbar">
-      <!-- Ambiance Gallery Preview -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 rounded-xl bg-surface-container p-4 border border-surface-container-high">
-        <div class="lg:col-span-8 relative rounded-xl overflow-hidden h-64 md:h-72 shadow-lg">
-          <img id="modalGalleryMainImg" src="../images/rooftop-twilight.png" alt="Zaaki Rooftop Ambiance" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
-          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface font-label-sm text-label-sm">
-            <span id="modalGalleryCaption" class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-bold">Panoramic Rooftop Vista under Starlight</span>
-            <span class="hidden sm:inline-block px-2.5 py-0.5 rounded bg-surface-container-high/80 text-on-surface-variant">3 Seating Zones</span>
-          </div>
-        </div>
-        <div class="lg:col-span-4 flex flex-col justify-between gap-2">
-          <p class="font-title-sm text-title-sm text-on-surface font-semibold">Select Atmospheric View</p>
-          <div class="grid grid-cols-3 lg:grid-cols-1 gap-2">
-            <button type="button" onclick="switchGalleryImg('../images/rooftop-twilight.png', 'Panoramic Rooftop Vista under Starlight', this)" class="gallery-thumb active-thumb p-1 rounded-lg border-2 border-primary bg-surface-container-high flex items-center gap-2 text-left transition-all">
-              <img src="../images/rooftop-twilight.png" class="w-12 h-12 rounded object-cover">
-              <div class="hidden lg:block">
-                <p class="font-label-sm text-label-sm text-on-surface font-bold">Open-Air Sky Terrace</p>
-                <span class="text-[10px] text-primary">Starlit mountain vista</span>
-              </div>
-            </button>
-            <button type="button" onclick="switchGalleryImg('../images/family-majlis.jpg', 'Family Hall (12 Dastarkhwans)', this)" class="gallery-thumb p-1 rounded-lg border-2 border-transparent bg-surface-container-high flex items-center gap-2 text-left transition-all hover:border-outline">
-              <img src="../images/family-majlis.jpg" class="w-12 h-12 rounded object-cover">
-              <div class="hidden lg:block">
-                <p class="font-label-sm text-label-sm text-on-surface font-bold">Family Hall Dastarkhwan</p>
-                <span class="text-[10px] text-on-surface-variant">Private carpeted enclave</span>
-              </div>
-            </button>
-            <button type="button" onclick="switchGalleryImg('../images/samovar-lounge.jpg', 'Main Hall &amp; Evening Lounge Seating', this)" class="gallery-thumb p-1 rounded-lg border-2 border-transparent bg-surface-container-high flex items-center gap-2 text-left transition-all hover:border-outline">
-              <img src="../images/samovar-lounge.jpg" class="w-12 h-12 rounded object-cover">
-              <div class="hidden lg:block">
-                <p class="font-label-sm text-label-sm text-on-surface font-bold">Main Hall Lounge</p>
-                <span class="text-[10px] text-on-surface-variant">Bespoke corporate &amp; family</span>
-              </div>
-            </button>
-            
-            
-            
-          </div>
-        </div>
-      </div>
-
       <!-- Interactive Floor Map & Table Grid -->
       <div class="rounded-xl bg-surface-container p-5 border border-surface-container-high">
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4 pb-3 border-b border-surface-container-high">
@@ -1137,6 +1096,13 @@
           </button>
         </div>
 
+        
+        <!-- Seating Zone Preview -->
+        <div class="mb-5 rounded-xl overflow-hidden relative h-40 md:h-52 border border-surface-container-high">
+          <img id="zonePreviewImg" src="../images/rooftop-twilight.png" alt="Rooftop Open-Air" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+          <div class="absolute bottom-2 left-3 px-3 py-1 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold" id="zonePreviewCaption">Rooftop Open-Air</div>
+        </div>
         <!-- Zone 1: Rooftop Open-Air -->
         <div id="zone-rooftop" class="zone-panel grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
           <button type="button" onclick="selectTable('R1', 'Rooftop Open-Air', '4-6 Guests', this)" class="table-seat-btn p-3 rounded-xl bg-surface-container-high hover:border-primary border border-transparent flex flex-col items-center justify-center transition-all group">
@@ -1482,6 +1448,14 @@
   });
 
   function switchZoneCategory(zoneId, btn) {
+    var zoneImgs = { 'zone-rooftop': ['../images/rooftop-twilight.png', 'Rooftop Open-Air'], 'zone-majlis': ['../images/family-majlis.jpg', 'Family Hall'], 'zone-gazebos': ['../images/samovar-lounge.jpg', 'Main Hall'] };
+    var zonePreviewImg = document.getElementById('zonePreviewImg');
+    if (zonePreviewImg && zoneImgs[zoneId]) {
+      zonePreviewImg.src = zoneImgs[zoneId][0];
+      var zonePreviewCaption = document.getElementById('zonePreviewCaption');
+      if (zonePreviewCaption) zonePreviewCaption.textContent = zoneImgs[zoneId][1];
+    }
+    document.querySelectorAll('.zone-panel').forEach
     document.querySelectorAll('.zone-panel').forEach(p => p.classList.add('hidden'));
     const targetZone = document.getElementById(zoneId);
     if (targetZone) targetZone.classList.remove('hidden');
@@ -1513,23 +1487,7 @@
     }
   }
 
-  function switchGalleryImg(src, caption, btn) {
-    const mainImg = document.getElementById('modalGalleryMainImg');
-    const cap = document.getElementById('modalGalleryCaption');
-    if (mainImg) mainImg.src = src;
-    if (cap) cap.textContent = caption;
-
-    document.querySelectorAll('.gallery-thumb').forEach(t => {
-      t.classList.remove('border-primary');
-      t.classList.add('border-transparent');
-    });
-    if (btn) {
-      btn.classList.remove('border-transparent');
-      btn.classList.add('border-primary');
-    }
-  }
-
-  function handleReservationSubmit(e) {
+    function handleReservationSubmit(e) {
     e.preventDefault();
     const form = e.target;
     const submitBtn = form.querySelector('button[type="submit"]');
